@@ -102,26 +102,26 @@
             textarea.style.height = `${scHeight}px`;
         })
     </script>
-
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
         // TODO: Add SDKs for Firebase products that you want to use
         // https://firebase.google.com/docs/web/setup#available-libraries
-        
+    
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyA_PAO0VE_r7f2XNqAAABCQvSLOwLlC9vk",
-            authDomain: "bday-2e731.firebaseapp.com",
-            projectId: "bday-2e731",
-            storageBucket: "bday-2e731.appspot.com",
-            messagingSenderId: "472524963531",
-            appId: "1:472524963531:web:3e30ad88dd5a7bc5fbe54e"
+        apiKey: "AIzaSyA_PAO0VE_r7f2XNqAAABCQvSLOwLlC9vk",
+        authDomain: "bday-2e731.firebaseapp.com",
+        databaseURL: "https://bday-2e731-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "bday-2e731",
+        storageBucket: "bday-2e731.appspot.com",
+        messagingSenderId: "472524963531",
+        appId: "1:472524963531:web:3e30ad88dd5a7bc5fbe54e"
         };
-        
+    
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
-
+    
         import {getDatabase, ref, get, set, child, update, remove}
         from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
 
